@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "adventofcode2023"
+version = "0.1.0"
+description = ""
+authors = ["Jonathan Plasse <jonathan.plasse@drotek.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+ruff = "^0.1.6"
+pyright = "^1.1.338"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+select = ["ALL"]
+ignore = ["D"]
+unfixable = ["F401"]
+
+[tool.ruff.per-file-ignores]
+"adventofcode2023/day*.py" = ["T201"]
+"tests/**.py" = ["PLR2004", "S101"]
+
+[tool.pyright]
+typeCheckingMode = "strict"
+reportUnusedVariable = false
+reportUnusedImport = false
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
