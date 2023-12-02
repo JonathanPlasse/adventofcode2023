@@ -1,7 +1,7 @@
 from adventofcode2023.day01 import part1, part2
 
 
-def test_day1_part1() -> None:
+def test_day01_part1() -> None:
     test_input = """\
 1abc2
 pqr3stu8vwx
@@ -10,7 +10,7 @@ treb7uchet"""
     assert part1(test_input) == 142
 
 
-def test_day1_part2() -> None:
+def test_day01_part2() -> None:
     test_input = """\
 two1nine
 eightwothree
