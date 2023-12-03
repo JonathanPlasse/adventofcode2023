@@ -1,5 +1,3 @@
-import pytest
-
 from adventofcode2023.day02 import part1, part2
 
 
